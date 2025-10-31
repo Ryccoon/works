@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>📒周知 | </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+1p:wght@100;400&display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<span></span>
+<div id="header">
+	<div class="header">
+		<div id="client_name">
+			<a href="" target="_blank"><img src="#" alt="###" id="logo"></a><span>周知</span>
+		</div>
+		<div class="header_side">
+			<span id="realtime"></span>
+			<div id="svmode_btn"><input type="button" value="管理者モード" onclick="SVmodeChange()"></div>
+		</div>
+	</div>
+	<div id="top-nav">
+		<ul class="tools">
+			<li><a href="" target="_blank">ダミー</a></li>
+			<li><a href="" target="_blank">ダミー</a></li>
+			<li><a href="" target="_blank">ダミー</a></li>
+			<li><a href="" target="_blank">ダミー</a></li>
+			<li><a href="" target="_blank">ダミー</a></li>
+			<li><a href="" target="_blank" >ダミー</a></li>
+			<li><a href="" target="_blank" >ダミー</a></li>
+		</ul>
+	</div>
+</div><!-- #follew end-->
+<div class="table">
+	<div class="list1">
+	<details>
+		<summary class="app_name">アプリ名</summary>
+	<span>ユーザー名</span><div class="link" onclick="copy1()"></div>
+	<span>パスワード</span><div class="pass" onclick="copy2()"></div>
+	</div>
+	</details>
+	<div class="list1">
+	<details><summary class="app_name">アプリ名</summary>
+	<span>ユーザー名</span><div class="link" onclick="copy3()"></div>
+	<span>パスワード</span><div class="pass" onclick="copy4()"></div>
+	</div>
+	</details>
+	<div class="list1">
+	<details><summary class="app_name">アプリ名</summary>
+	<span>ユーザー名</span><div class="link" onclick="copy5()"></div>
+	<span>パスワード</span><div class="pass" onclick="copy6()"></div>
+	</div>
+</div><!--.table end-->
+
+<div class="announce">
+<spam class="annotitle">📢お知らせ: </spam>
+<button id="annobtn" onclick="annochange()" class="hidden">編集</button>
+<p id="annotxt"></p>
+</div>
+
+<div id="main">
+<details class="category" open="false"><summary class="important">📍重要</summary>
+<div id="pinned">
+</div><!--#pinned end--></details>
+<details class="category" open="false"><summary class="normal">📄確認</summary>
+<div id="nomal">
+</details>
+</div><!--#mainflame end-->
+</div><!--#main end-->
+<div id="editArea" class="hidden">
+<details  class="category"><summary class="editer">✏️編集</summary>
+<form id="form">
+<span>編集</span>
+<input type="date" id="date"><input type="button" value="新規追加" onclick="addon()"><input type="button" value="トップに固定" onclick="pinned()"><input type="reset" value="クリア">
+<textarea name="about" id="about" cols="100" rows="1" placeholder="概要"></textarea> <input type="url" id="url" placeholder="URL"> <input type="file" name="image" accept="image/*"><br>
+<textarea name="text" cols="100" rows="10" id="text" placeholder="ここに詳細を入力"></textarea>
+</form>
+</details>
+</div>
+<div id="notice"><span></span></div>
+<div id="footer-nav">
+<ul class="tools">
+	<li><a href="" target="_blank">□</a></li>
+	<li><a href="" target="_blank">□</a></li>
+	<li><a href="" target="_blank">□</a></li>
+	<li><a href="" target="_blank">□</a></li>
+	<li><a href="" target="_blank">□</a></li>
+	<li><a href="#"  class="nav">⬆️</a></li>
+</ul>
+</div>
+</body>
+</html>
